@@ -49,14 +49,3 @@ class Arc(Move):
         else:
             return "G03"
 
-@attr.s            
-class Circle(Arc):
-    x = None
-    y = None
-    z = None
-    r = None    
-    values = ['x', 'y', 'z', 'i', 'j', 'k', 'r']
-
-class Home(Rapid):
-    code = "G28"    
-
